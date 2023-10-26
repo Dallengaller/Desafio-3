@@ -49,6 +49,9 @@
     align-items: center;
     background-color: #DBDBDB;
   }
+  .nav p {
+    margin: 5px 0;
+  }
   .dropdown_menu {
    display: flex;
    flex-direction: row;
@@ -70,9 +73,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .foto_auto {
+    width: 350px;
+  }
+  .auto_frame {
+    border: 1px solid #DBDBDB ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    box-shadow: 0px 5px 10px rgb(204, 204, 204);    
+  }
+  button {
+    background-color: #13438A;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  .main ul {
+    display: flex;
+    margin: 15px 0;
+    list-style: none;
+    gap: 5px;
+  }
+  .main ul li {
+    border: 1px solid rgb(188, 188, 188);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #13438A;
     
   }
-  
+
   .footer {
     grid-area: foot;
     display: flex;
