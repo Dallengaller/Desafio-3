@@ -19,7 +19,7 @@
     "nav  nav"
     "main main"
     "foot  foot";
-  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-rows: 1fr 100px 10fr 100px;
   grid-template-columns: 1fr;
 }
 
@@ -30,7 +30,7 @@
   align-items: center;
   background-color: #13438A;
   color: white;
-  padding: 0 20px;
+  padding: 20px 30px;
 }
 
 .logo_electric {
@@ -84,7 +84,10 @@
   justify-content: center;
   align-items: center;
 }
-
+.gallery_container {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
 .foto_auto {
   width: 350px;
 }
@@ -111,6 +114,7 @@ button {
 
 .main ul {
   display: flex;
+  justify-content: center;
   margin: 15px 0;
   list-style: none;
   gap: 5px;
@@ -147,17 +151,17 @@ button {
       "head nav"
       "head main"
       "foot main";
-    grid-template-rows: 100px 1fr 150px;
     grid-template-columns: 1fr 6fr;
+    grid-template-rows: 100px 1fr 100px;
   }
 
   .header {
     grid-area: head;
+    height: 950px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: #8ca0ff;
     align-items: start;
     padding-top: 20px;
   }
@@ -182,7 +186,8 @@ button {
  }
   .nav {
     grid-area: nav;
-    background-color: #ffa08c;
+    padding-top: 5px;
+    padding-bottom: 25px;
   }
   .dropdown_menu {
     width: 1700px;
@@ -191,18 +196,52 @@ button {
   .main {
     grid-area: main;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: #ffff64;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 70px;
   }
+  .gallery_container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 5px;
+    column-gap: 30px;
+  }
+  .page_container {
+    display: flex;
+    gap: 5px;
+  }
+  .page_container .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(188, 188, 188);
+    width: 30px;
+    height: 30px;
+    color: #13438A;
+    
+  }
+  .foto_auto {
+    width: 350px;
+  }
+
  .main ul {
   display: none;
  } 
 
   .footer {
     grid-area: foot;
-    background-color: #8cffa0;
   }
+  .footer p {
+    width: 200px;
+    text-align: center;
+  }
+}
 
-
+/* Elementos a ocultar */
+@media screen and (max-width: 576px) {
+  .nav_elements, .page_container, .hide_car, .card {
+    display: none;
+  }
 }
