@@ -241,7 +241,7 @@ button {
 
 /* Elementos a ocultar */
 @media screen and (max-width: 576px) {
-  .nav_elements, .page_container, .hide_car, .card {
+  .nav_elements, .page_container, .card {
     display: none;
   }
 }
