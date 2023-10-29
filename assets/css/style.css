@@ -15,7 +15,7 @@
     "nav  nav"
     "main main"
     "foot  foot";
-  grid-template-rows: 1fr 100px 10fr 100px;
+  grid-template-rows: 1fr 100px 490px 100px;
   grid-template-columns: 1fr;
 }
 
@@ -235,12 +235,9 @@ button {
   }
 }
 
-/* Elementos a ocultar en version movil
-  Es la unica solucion que pude encontrar para representar la maqueta. Habia intentado hacer una galeria de imagenes con scroll vertical, pero luego, aplicando un position fixed al footer y header, modificaba demasiado la version desktop, ademas que el contenido se extendia hacia abajo. Asi por el momento es algo que debo investigar mas. 
-*/
-
+/* Elementos ocultos en version movil */
 @media screen and (max-width: 576px) {
-  .nav_elements, .page_container, .card {
+  .nav_elements, .page_container {
     display: none;
   }
 }
