@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Azul 1 #13438A
-   Azul 2 #092158
-   Gris #DBDBDB */
-
 /* Modo movil */
 
 .page {
@@ -239,7 +235,10 @@ button {
   }
 }
 
-/* Elementos a ocultar */
+/* Elementos a ocultar en version movil
+  Es la unica solucion que pude encontrar para representar la maqueta. Habia intentado hacer una galeria de imagenes con scroll vertical, pero luego, aplicando un position fixed al footer y header, modificaba demasiado la version desktop, ademas que el contenido se extendia hacia abajo. Asi por el momento es algo que debo investigar mas. 
+*/
+
 @media screen and (max-width: 576px) {
   .nav_elements, .page_container, .card {
     display: none;
